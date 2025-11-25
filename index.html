@@ -10,64 +10,64 @@
   <div id="tartalom">
     <h1>Az <span class="azure">Azure</span> IoT Edge</h1>
 
-    <p>Az <span class="azure">Azure</span> IoT Edge szolgĂˇltatĂˇs a felhĹ‘beli elemzĂ©seket Ă©s egyĂ©ni ĂĽzleti logikĂˇkat eszkĂ¶zĂ¶kre helyezi Ăˇt, hogy a szervezet az ĂĽzleti elemzĂ©sekre tudjon koncentrĂˇlni az adatkezelĂ©s helyett. Az ĂĽzleti logikĂˇt szabvĂˇnyos tĂˇrolĂłba csomagolva kibĹ‘vĂ­theti IoT-megoldĂˇsĂˇt, majd bĂˇrmely eszkĂ¶zĂ¶n ĂĽzembe helyezheti ezeket a tĂˇrolĂłkat, Ă©s figyelheti az Ă¶sszes felhĹ‘bĹ‘l.</p>
+    <p>Az <span class="azure">Azure</span> IoT Edge szolgáltatás a felhőbeli elemzéseket és egyéni üzleti logikákat eszközökre helyezi át, hogy a szervezet az üzleti elemzésekre tudjon koncentrálni az adatkezelés helyett. Az üzleti logikát szabványos tárolóba csomagolva kibővítheti IoT-megoldását, majd bármely eszközön üzembe helyezheti ezeket a tárolókat, és figyelheti az összes felhőből.</p>
 
-    <p>Az elemzĂ©sek jelentĹ‘s ĂĽzleti Ă©rtĂ©keket teremthetnek az IoT-megoldĂˇsokban, de nem szĂĽksĂ©ges minden elemzĂ©st a felhĹ‘ben vĂ©gezni. Ha a lehetĹ‘ leggyorsabban szeretne reagĂˇlni a vĂ©szhelyzetekre, a biztonsĂˇgi rendellenessĂ©g Ă©szlelĂ©se szĂˇmĂ­tĂˇsi feladatokat a peremhĂˇlĂłzat szĂ©lĂ©n is futtathatja. Ha csĂ¶kkenteni kĂ­vĂˇnja a sĂˇvszĂ©lessĂ©gi kĂ¶ltsĂ©geket, Ă©s nem kĂ­vĂˇnja Ăˇtvinni az terabĂˇjtos nyers adatokat, akkor az adatokat helyileg tĂ¶rĂ¶lheti Ă©s Ă¶sszesĂ­theti, majd csak elemzĂ©s cĂ©ljĂˇbĂłl elkĂĽldheti a felhĹ‘be a bepillantĂˇst.</p>
+    <p>Az elemzések jelentős üzleti értékeket teremthetnek az IoT-megoldásokban, de nem szükséges minden elemzést a felhőben végezni. Ha a lehető leggyorsabban szeretne reagálni a vészhelyzetekre, a biztonsági rendellenesség észlelése számítási feladatokat a peremhálózat szélén is futtathatja. Ha csökkenteni kívánja a sávszélességi költségeket, és nem kívánja átvinni az terabájtos nyers adatokat, akkor az adatokat helyileg törölheti és összesítheti, majd csak elemzés céljából elküldheti a felhőbe a bepillantást.</p>
 
-    <h2>IoT Edge-futtatĂłkĂ¶rnyezet</h2>
+    <h2>IoT Edge-futtatókörnyezet</h2>
 
-    <p>Az <span class="azure">Azure</span> IoT Edge-futtatĂłkĂ¶rnyezet egyĂ©ni Ă©s felhĹ‘beli logikĂˇk is hasznĂˇlatĂˇt is lehetĹ‘vĂ© teszi az IoT Edge-eszkĂ¶zĂ¶kĂ¶n. A futtatĂłkĂ¶rnyezet a IoT Edge eszkĂ¶zĂ¶n helyezkedik el, Ă©s felĂĽgyeleti Ă©s kommunikĂˇciĂłs mĹ±veleteket hajt vĂ©gre. A futtatĂłkĂ¶rnyezet szĂˇmos funkciĂłt lĂˇt el:</p>
+    <p>Az <span class="azure">Azure</span> IoT Edge-futtatókörnyezet egyéni és felhőbeli logikák is használatát is lehetővé teszi az IoT Edge-eszközökön. A futtatókörnyezet a IoT Edge eszközön helyezkedik el, és felügyeleti és kommunikációs műveleteket hajt végre. A futtatókörnyezet számos funkciót lát el:</p>
 
     <ul>
-      <li>A szĂˇmĂ­tĂˇsi feladatok telepĂ­tĂ©se Ă©s frissĂ­tĂ©se az eszkĂ¶zĂ¶n.</li>
-      <li>Fenntartja <span class="azure">Azure</span> IoT Edge biztonsĂˇgi szabvĂˇnyait az eszkĂ¶zĂ¶n.</li>
-      <li>BiztosĂ­tja az IoT Edge-modulok folyamatos futĂˇsĂˇt.</li>
-      <li>Jelenti a modulok ĂˇllapotĂˇt a felhĹ‘nek a tĂˇvoli monitorozĂˇshoz.</li>
-      <li>FelĂĽgyeli az alĂˇrendelt levelek eszkĂ¶zei Ă©s egy IoT Edge eszkĂ¶z kĂ¶zĂ¶tti kommunikĂˇciĂłt egy IoT Edge eszkĂ¶zĂ¶n lĂ©vĹ‘ modulok, valamint egy IoT Edge eszkĂ¶z Ă©s a felhĹ‘ kĂ¶zĂ¶tt.</li>
+      <li>A számítási feladatok telepítése és frissítése az eszközön.</li>
+      <li>Fenntartja <span class="azure">Azure</span> IoT Edge biztonsági szabványait az eszközön.</li>
+      <li>Biztosítja az IoT Edge-modulok folyamatos futását.</li>
+      <li>Jelenti a modulok állapotát a felhőnek a távoli monitorozáshoz.</li>
+      <li>Felügyeli az alárendelt levelek eszközei és egy IoT Edge eszköz közötti kommunikációt egy IoT Edge eszközön lévő modulok, valamint egy IoT Edge eszköz és a felhő között.</li>
     </ul>
     <div class="keret">
-      <img class="limiter" src="./runtime.png" title="Az IoT Edge-futtatĂłkĂ¶rnyezet">
+      <img class="limiter" src="./runtime.png" title="Az IoT Edge-futtatókörnyezet">
     </div>
-    <p class="kepalairas">Az IoT Edge-futtatĂłkĂ¶rnyezet</p>
+    <p class="kepalairas">Az IoT Edge-futtatókörnyezet</p>
     
 
-    <h2>VerziĂłelĹ‘zmĂ©nyek</h2>
+    <h2>Verzióelőzmények</h2>
 
-    <p>Ez a tĂˇblĂˇzat a IoT Edge csomagok kiadĂˇsĂˇnak legĂşjabb verziĂłit tartalmazza, Ă©s kiemeli az egyes verziĂłkra vonatkozĂł dokumentĂˇciĂłs frissĂ­tĂ©seket.</p>
+    <p>Ez a táblázat a IoT Edge csomagok kiadásának legújabb verzióit tartalmazza, és kiemeli az egyes verziókra vonatkozó dokumentációs frissítéseket.</p>
     <table>
       <tr>
-        <th>KibocsĂˇtĂˇsi megjegyzĂ©sek Ă©s eszkĂ¶zĂ¶k</th>
-        <th>TĂ­pus</th>
-        <th>DĂˇtum</th>
-        <th>Legfontosabb tudnivalĂłk</th>
+        <th>Kibocsátási megjegyzések és eszközök</th>
+        <th>Típus</th>
+        <th>Dátum</th>
+        <th>Legfontosabb tudnivalók</th>
       </tr>
       <tr>
-        <td style="text-align: center;">1,2 â€“ RC1</td>
-        <td>ElĹ‘nĂ©zet</td>
+        <td style="text-align: center;">1,2 – RC1</td>
+        <td>Előnézet</td>
         <td>2020. november</td>
-        <td>Az ĂˇtjĂˇrĂłk mĂ¶gĂ¶tt IoT Edge eszkĂ¶zĂ¶k<br>
-          IoT Edge MQTT-kĂ¶zvetĂ­tĹ‘</td>
+        <td>Az átjárók mögött IoT Edge eszközök<br>
+          IoT Edge MQTT-közvetítő</td>
       </tr>
       <tr>
         <td style="text-align: center;">1.0.10</td>
         <td>Stable</td>
-        <td>2020. oktĂłber</td>
-        <td>UploadSupportBundle Direct metĂłdus<br>
-    FutĂˇsidejĹ± mĂ©rĹ‘szĂˇmok feltĂ¶ltĂ©se<br>
-    Ăštvonal prioritĂˇsa Ă©s Ă©lettartama<br>
-    Modul indĂ­tĂˇsi sorrendje<br>
-    X. 509 manuĂˇlis kiĂ©pĂ­tĂ©s</td>
+        <td>2020. október</td>
+        <td>UploadSupportBundle Direct metódus<br>
+    Futásidejű mérőszámok feltöltése<br>
+    Útvonal prioritása és élettartama<br>
+    Modul indítási sorrendje<br>
+    X. 509 manuális kiépítés</td>
       </tr>
       <tr>
         <td style="text-align: center;">1.0.9</td>
         <td>Stable</td>
-        <td>2020. mĂˇrcius</td>
-        <td>X. 509 automatikus kiĂ©pĂ­tĂ©s a DPS-vel<br>
-    RestartModule Direct metĂłdus<br>
-    tĂˇmogatĂˇs â€“ Bundle parancs</td>
+        <td>2020. március</td>
+        <td>X. 509 automatikus kiépítés a DPS-vel<br>
+    RestartModule Direct metódus<br>
+    támogatás – Bundle parancs</td>
       </tr>
     </table>
-    <p>ForrĂˇs: <a id="link" href="https://docs.microsoft.com/hu-hu/azure/iot-edge" target="_blank">https://docs.microsoft.com/hu-hu/azure/iot-edge</a></p>
+    <p>Forrás: <a id="link" href="https://docs.microsoft.com/hu-hu/azure/iot-edge" target="_blank">https://docs.microsoft.com/hu-hu/azure/iot-edge</a></p>
   </div>
 </body>
 </html>
